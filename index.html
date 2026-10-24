@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff9ee">
+  <title>こっきの ぼうけん</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <div class="scene-rainbow"></div>
+    <div class="scene-sun"></div>
+    <div class="scene-cloud cloud-one"></div>
+    <div class="scene-cloud cloud-two"></div>
+    <div class="scene-cloud cloud-three"></div>
+    <div class="scene-garland">
+      <img src="flags/jp.svg" alt="" width="48" height="36" draggable="false" style="--i:0;--hang:0px;--tilt:12deg">
+      <img src="flags/br.svg" alt="" width="48" height="36" draggable="false" style="--i:1;--hang:9px;--tilt:10deg">
+      <img src="flags/ca.svg" alt="" width="48" height="36" draggable="false" style="--i:2;--hang:17px;--tilt:8deg">
+      <img src="flags/fr.svg" alt="" width="48" height="36" draggable="false" style="--i:3;--hang:23px;--tilt:6deg">
+      <img src="flags/it.svg" alt="" width="48" height="36" draggable="false" style="--i:4;--hang:28px;--tilt:4deg">
+      <img src="flags/kr.svg" alt="" width="48" height="36" draggable="false" style="--i:5;--hang:31px;--tilt:2deg">
+      <img src="flags/in.svg" alt="" width="48" height="36" draggable="false" style="--i:6;--hang:33px;--tilt:1deg">
+      <img src="flags/za.svg" alt="" width="48" height="36" draggable="false" style="--i:7;--hang:33px;--tilt:-1deg">
+      <img src="flags/jm.svg" alt="" width="48" height="36" draggable="false" style="--i:8;--hang:31px;--tilt:-2deg">
+      <img src="flags/ke.svg" alt="" width="48" height="36" draggable="false" style="--i:9;--hang:28px;--tilt:-4deg">
+      <img src="flags/mx.svg" alt="" width="48" height="36" draggable="false" style="--i:10;--hang:23px;--tilt:-6deg">
+      <img src="flags/se.svg" alt="" width="48" height="36" draggable="false" style="--i:11;--hang:17px;--tilt:-8deg">
+      <img src="flags/au.svg" alt="" width="48" height="36" draggable="false" style="--i:12;--hang:9px;--tilt:-10deg">
+      <img src="flags/gb.svg" alt="" width="48" height="36" draggable="false" style="--i:13;--hang:0px;--tilt:-12deg">
+    </div>
+    <span class="scene-balloon balloon-one"></span>
+    <span class="scene-balloon balloon-two"></span>
+    <span class="scene-balloon balloon-three"></span>
+    <span class="scene-star star-one">✦</span>
+    <span class="scene-star star-two">✧</span>
+    <span class="scene-star star-three">✦</span>
+    <span class="scene-star star-four">✧</span>
+    <span class="scene-star star-five">✦</span>
+    <div class="scene-hill hill-back"></div>
+    <div class="scene-hill hill-front"></div>
+    <span class="scene-landmark landmark-one">🗼</span>
+    <span class="scene-landmark landmark-two">🏰</span>
+    <span class="scene-landmark landmark-three">🗽</span>
+    <span class="scene-landmark landmark-four">🐘</span>
+    <span class="scene-landmark landmark-five">🦒</span>
+    <span class="scene-landmark landmark-six">🐨</span>
+    <span class="scene-landmark landmark-seven">🌋</span>
+    <span class="scene-plane">✈️</span>
+  </div>
+  <div id="save-warning" class="save-warning" role="alert" hidden>きろくが ほぞんできません。おうちのかたへ：バックアップをこまめに保存してください。</div>
+  <header class="topbar">
+    <button type="button" class="home-button" data-action="home" aria-label="おうちへ もどる"><span aria-hidden="true">🏠</span><span>おうち</span></button>
+    <div class="brand"><span aria-hidden="true">🚩</span> こっきの ぼうけん</div>
+    <span id="header-streak" class="streak-pill">🌱 きょうも いっぽ</span>
+  </header>
+  <main id="app" tabindex="-1"><div class="panel"><h1>じゅんびちゅう… 🌏</h1></div></main>
+  <div id="audio-gate" class="audio-gate" hidden><button type="button" data-action="unlock-audio" class="primary"><span class="big-icon">🔊</span>おとを きく</button><p id="audio-gate-text"></p></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <div id="celebration" class="celebration" aria-hidden="true"></div>
+  <div id="print-area" aria-hidden="true"></div>
+  <noscript><p class="panel">JavaScriptを有効にしてから、もう一度開いてください。</p></noscript>
+  <footer class="site-footer">ちいさな いっぽで、せかいが ひろがる。<br><small>VOICEVOX:春日部つむぎ</small></footer>
+  <script src="js/data.js"></script>
+  <script src="js/worldmap.js"></script>
+  <script src="js/audio_manifest.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
